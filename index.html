@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site em Manutenção</title>
+    <title>Trelov Odracir</title>
     <!-- Importando a fonte JetBrains Mono com ligaduras ativadas -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
-
 
     <style>
         /* Definições de estilos gerais */
@@ -23,19 +21,19 @@
             color: white;
             text-align: center;
             overflow: hidden;
+            font-feature-settings: "calt" 1; /* Enable ligatures for IE 10+, Edge */
+            font-variant-ligatures: common-ligatures contextual;  /* Ativa ligaduras comuns e contextuais */
+            text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
         }
 
         h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 300;
             letter-spacing: 2px;
             white-space: nowrap;
             display: inline-block;
-            text-transform: uppercase;
             line-height: 1.2;
             animation: pulse 1.5s ease-in-out infinite;
-            font-feature-settings: "liga" 1; /* Habilitando ligaduras */
-            font-variant-ligatures: common-ligatures contextual;  /* Ativa ligaduras comuns e contextuais */
         }
 
         /* Animação de pulsação para a mensagem */
@@ -45,16 +43,9 @@
             100% { transform: scale(1); }
         }
 
-        /* Aplicando ligaduras na fonte */
-        /* Specify in CSS */
-        code { font-family: 'Fira Code', monospace; }
-        
-        @supports (font-variation-settings: normal) {
-          code { font-family: 'Fira Code VF', monospace; }
-        }
     </style>
 </head>
 <body>
-    <h1><code>-&gt;</code> Site em Manutenção <code>&lt;=</code> or <code>:=</code> </h1>
+    <h1>!= Hi, <br/> my name <br/> isn't <br/>~&gt;Trelov!&lt;~</h1>
 </body>
 </html>
