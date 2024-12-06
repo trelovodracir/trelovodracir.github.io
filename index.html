@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site em Manutenção</title>
     <!-- Importando a fonte JetBrains Mono com ligaduras ativadas -->
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
     <style>
         /* Definições de estilos gerais */
@@ -32,6 +32,8 @@
             text-transform: uppercase;
             line-height: 1.2;
             animation: pulse 1.5s ease-in-out infinite;
+            font-feature-settings: "liga" 1; /* Habilitando ligaduras */
+            font-variant-ligatures: common-ligatures contextual;  /* Ativa ligaduras comuns e contextuais */
         }
 
         /* Animação de pulsação para a mensagem */
@@ -44,6 +46,7 @@
         /* Aplicando ligaduras na fonte */
         code, pre {
             font-feature-settings: "liga" 1; /* Habilitando ligaduras */
+            font-variant-ligatures: common-ligatures contextual;  /* Ativa ligaduras comuns e contextuais */
         }
     </style>
 </head>
