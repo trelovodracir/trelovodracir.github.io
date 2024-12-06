@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site em Manutenção</title>
+    <!-- Importando a fonte JetBrains Mono com ligaduras ativadas -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        /* Definições de estilos gerais */
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'JetBrains Mono', monospace;
+            background: linear-gradient(to right, #008080, #4B0082); /* Degrade do teal para o indigo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+            white-space: nowrap;
+            display: inline-block;
+            text-transform: uppercase;
+            line-height: 1.2;
+            animation: pulse 1.5s ease-in-out infinite;
+        }
+
+        /* Animação de pulsação para a mensagem */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Aplicando ligaduras na fonte */
+        code, pre {
+            font-feature-settings: "liga" 1; /* Habilitando ligaduras */
+        }
+    </style>
+</head>
+<body>
+    <h1>Site em Manutenção</h1>
+</body>
+</html>
